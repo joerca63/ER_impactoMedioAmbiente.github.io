@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energía Renovable - Colombia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ENERGÍA RENOVABLE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="hojas-vida.html">Hojas de Vida</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Colombia: Potencia Mundial de la Vida</h2>
+                <p>Diversificando nuestra matriz energética para un futuro sostenible</p>
+                <a href="#datos" class="btn">Ver Datos</a>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="container">
+                <h2>Transición Energética Justa</h2>
+                <p>Como respuesta a la alta dependencia en las fuentes hídricas para la generación de energía, y en línea con políticas que buscan posicionar al país como una potencia mundial de la vida. Colombia ha dispuesto un moderno esquema regulatorio, institucional y de mercado, que busca diversificar la matriz energética, ampliando la capacidad instalada de fuentes no convencionales de energía renovables, para reducir en un 51% los emisiones a 2030 y cumplir la meta ser carbono neutral a 2050.</p>
+            </div>
+        </section>
+
+        <section class="fuentes" id="datos">
+            <div class="container">
+                <h2>Fuentes de Energía Renovable</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Energía Solar">
+                        <h3>Solar</h3>
+                        <p>La energía solar fotovoltaica convierte la luz del sol directamente en electricidad.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Energía Eólica">
+                        <h3>Eólica</h3>
+                        <p>La energía eólica utiliza la fuerza del viento para generar electricidad.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1437957146754-f6377debe171?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Energía Hidroeléctrica">
+                        <h3>Hidroeléctrica</h3>
+                        <p>La energía hidroeléctrica aprovecha la fuerza del agua en movimiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="datos">
+            <div class="container">
+                <h2>Datos Globales de Energía Renovable</h2>
+                <div class="graficos">
+                    <div class="grafico-container">
+                        <canvas id="graficoBarras"></canvas>
+                    </div>
+                    <div class="grafico-container">
+                        <canvas id="graficoTorta"></canvas>
+                    </div>
+                </div>
+                <button id="cargarDatos" class="btn">Cargar Datos Completo</button>
+                <div id="tablaDatos" class="tabla-datos"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Teléfono: +57 1 123 4567</p>
+                <p>Email: info@energiarenovable.co</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces</h3>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Energía Renovable Colombia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/graficos.js"></script>
+</body>
+</html>

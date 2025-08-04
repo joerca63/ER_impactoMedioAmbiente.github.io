@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Energía Renovable</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ENERGÍA RENOVABLE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calculadora.html" class="active">Calculadora</a></li>
+                <li><a href="hojas-vida.html">Hojas de Vida</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculadora">
+            <div class="container">
+                <h2>Calculadora de Energía Renovable</h2>
+                <p>Estima el porcentaje de energía renovable en tu consumo eléctrico</p>
+                
+                <form id="formCalculadora">
+                    <div class="form-group">
+                        <label for="consumo">Consumo eléctrico total (kWh):</label>
+                        <input type="number" id="consumo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="region">Región:</label>
+                        <select id="region">
+                            <option value="global">Global</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="europa">Europa</option>
+                            <option value="norteamerica">Norteamérica</option>
+                            <option value="sudamerica">Sudamérica</option>
+                            <option value="asia">Asia</option>
+                            <option value="africa">África</option>
+                            <option value="oceania">Oceanía</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="anio">Año de referencia:</label>
+                        <select id="anio">
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Calcular</button>
+                </form>
+                
+                <div id="resultado" class="resultado">
+                    <h3>Resultado:</h3>
+                    <div id="resultadoContenido"></div>
+                    <div class="grafico-container">
+                        <canvas id="graficoResultado"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Teléfono: +57 1 123 4567</p>
+                <p>Email: info@energiarenovable.co</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces</h3>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Energía Renovable Colombia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
